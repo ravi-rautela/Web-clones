@@ -1,0 +1,11 @@
+.videoSlider {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+.sidebar__buttons{
+    padding: 10px;
+    text-align: center;
+    color: honeydew;
+    cursor: pointer;
+}

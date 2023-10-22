@@ -1,0 +1,49 @@
+.video__footer {
+  position: relative;
+  color: rgb(255, 255, 255);
+  bottom: 120px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 30px;
+  display: flex;
+}
+.text__content {
+  flex: 1;
+}
+.text__content > p {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.ticker__icon > p {
+  font-size: 10px;
+}
+.text__content > h3 {
+  padding-bottom: 10px;
+}
+.video__ticker > .ticker {
+  height: fit-content;
+  margin-left: 30px;
+  width: 50%;
+}
+.ticker__icon {
+  position: absolute;
+}
+.tape__record {
+  margin-top: 4.5rem;
+}
+.tape__record > img {
+  animation: taperotate infinite 4s linear;
+  height: 40px;
+  position: absolute;
+  filter: invert(1);
+  bottom: 0;
+  right: 20px;
+}
+
+@keyframes taperotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
