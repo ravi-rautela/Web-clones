@@ -8,8 +8,13 @@ const Login = () => {
           <span className="logo">Live Chat - With Friends</span>
           <span className="title">Sign In</span>
           <form>
-            <input type="password" placeholder="password" />
-            <input type="email" placeholder="email" autoComplete="off" />
+            <input type="password" placeholder="password" required />
+            <input
+              type="email"
+              placeholder="email"
+              autoComplete="off"
+              required
+            />
             <button className="btn">Sign In</button>
           </form>
           <p>You don't have an account? Sign up</p>

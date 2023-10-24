@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.messages::-webkit-scrollbar {
+  width: 12px;
+}
+.sidebar::-webkit-scrollbar {
+  width: 12px;
+}
 
 .form__container {
   background-color: #a7bcff;
@@ -26,7 +32,7 @@
   flex-direction: column;
   gap: 15px;
 }
-.logo {
+.form__wrapper > .logo {
   font-size: 24px;
   font-weight: bold;
   color: #5b5d8d;
@@ -45,7 +51,7 @@ input {
 input::placeholder {
   color: rgb(175, 175, 175);
 }
-button .btn {
+form .btn {
   background-color: #7b96ec;
   color: white;
   border: none;
@@ -71,8 +77,10 @@ label {
   font-size: small;
   cursor: pointer;
 }
-label img {
+label > .img {
   width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 /* Home section css */
@@ -94,7 +102,6 @@ label img {
 .sidebar {
   flex: 1;
   background-color: #3e3c61;
-  overflow: auto;
   overflow-x: hidden;
 }
 
@@ -114,7 +121,7 @@ label img {
   gap: 10px;
   align-items: center;
 }
-img {
+.user img {
   background-color: #dddf;
   height: 24px;
   width: 24px;
@@ -187,7 +194,6 @@ img {
 }
 /* css for input section */
 .input {
-  height: 3rem;
   background-color: aliceblue;
   display: flex;
   align-items: center;
@@ -233,6 +239,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1px;
+}
+.messageInfo img{
+  width: 36px;
+  height: 36px;
 }
 .messageInfo span {
   color: rgb(173, 171, 171);

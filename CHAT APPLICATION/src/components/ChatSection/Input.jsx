@@ -6,7 +6,7 @@ import Image from "../../images/image-gallery.png"
 const Input = () => {
   return (
     <div className="input">
-      <input type="text" placeholder="Type Something..." autoComplete="off"/>
+      <input type="text" placeholder="Type Something..." max={200} min={1} autoComplete="off"/>
       <div className="send">
         <img src={Attach} alt="" />
         <input type="file" id="file" style={{ display: "none" }} />
